@@ -11,7 +11,9 @@
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="stylesheet" href="styles/main.css">
-        <script src="scripts/vendor/modernizr.js"></script>
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
     </head>
     <body>
         <div class="container">
@@ -33,8 +35,20 @@
 
         </script>
 
-        <script src="scripts/vendor/vendorfiles.js"></script>
+        <!-- build:js scripts/vendor/vendorfiles.js -->
+        <script src="components/jquery/jquery.js"></script>
+        <script src="components/custom/three.min.js"></script>
+        <script src="components/custom/CopyShader.js"></script>
+        <script src="components/custom/DotScreenShader.js"></script>
+        <script src="components/custom/RGBShiftShader.js"></script>
+        <script src="components/custom/EffectComposer.js"></script>
+        <script src="components/custom/RenderPass.js"></script>
+        <script src="components/custom/MaskPass.js"></script>
+        <script src="components/custom/ShaderPass.js"></script>
+        <!-- endbuild -->
 
+        <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>
+        <!-- endbuild -->
 </body>
 </html>
